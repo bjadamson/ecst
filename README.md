@@ -46,9 +46,7 @@ Other that running separate systems in parallel, ECST supports splitting a singl
 multiple sub-tasks, which can be executed on separate threads. Many systems, such as the ones that
 represent functionally pure com- putations, do not contain side-effects that modify their own state
 or that define interactions between the subscribed entities: these are prime examples of “em-
-barrassingly parallel” computations. In contrast, some systems (e.g. broad-phase collision spatial
-partitioning) require processing their subscribed entities on a single thread, in order to update
-data structures without explicit locking mechanisms.
+barrassingly parallel” computations.
 
 ---------------------------------------------------------------------------------------------------
 # FAQ #
@@ -70,7 +68,11 @@ a system's process function?
 
 **A:** [pending query](https://github.com/SuperV1234/ecst/issues/9#issuecomment-244577591)
 
-**Q** How do I set my system to run in parallel, splitting the wo
+**Q** How do enable inner parallelism for my system?
+
+**A:** During construction of the system signature list, invoke the
+ *[allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118)
+ *[disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
 ---------------------------------------------------------------------------------------------------
 # More Links
 * [Current Issues](https://github.com/SuperV1234/ecst/issues)
