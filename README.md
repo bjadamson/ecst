@@ -5,7 +5,7 @@ Entity-Component-System Library
 
 Successful development of complex real-time applications and games requires a flexible and efficient
 entity management system. As a project becomes more intricate, it’s critical to find an elegant way
-to compose objects in order to pre-vent code repetition, improve modularity and open up powerful
+to compose objects in order to prevent code repetition, improve modularity and open up powerful
 optimization possibilities.
 
 The Entity-Component-System architectural pattern was designed to achieve the aforementioned
@@ -21,13 +21,18 @@ their storage policies.
 
 **"ecst"** was developed as my BCS graduation project.
 
+---------------------------------------------------------------------------------------------------
+# Getting Started
 * [Build Instructions](BUILD_INSTRUCTIONS.md)
 * [Code Sample](CODE_SAMPLE.md)
+* [LICENSE](LICENSE)
+
+---------------------------------------------------------------------------------------------------
+# More Information
 * [Accompanying Thesis](https://github.com/SuperV1234/bcs_thesis)
 * [Slides](https://github.com/SuperV1234/cppnow2016)
  * NOTE: These are accompanying an earlier version of the library was that presented at **C++Now
 2016**pdf
-* [LICENSE](LICENSE)
 
 ---------------------------------------------------------------------------------------------------
 # Demonstration of using ECST
