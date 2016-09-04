@@ -80,12 +80,14 @@ too. You do this when your defining your "system signature list".
 **Q:** Is it possible to iterate over the components attached to entities, without being inside of
 a system's process function?
 
-**A:** [pending query](https://github.com/SuperV1234/ecst/issues/9#issuecomment-244577591)
+**A:** [issue](https://github.com/SuperV1234/ecst/issues/9#issuecomment-244577591)
 
 **Q** How do enable inner parallelism for my system?
 
 **A:** During construction of the system signature list, invoke the
-[allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118) and [disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
+[allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118)
+and
+[disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
 
 ---------------------------------------------------------------------------------------------------
 # More Links
