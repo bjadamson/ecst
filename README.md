@@ -34,6 +34,22 @@ their storage policies.
  * NOTE: These are accompanying an earlier version of the library was that presented at **C++Now
 2016**pdf
 
+## Terminology
+1. “Outer parallelism” is the term used in ECST which defines the concept of running multiple
+systems that do not depend on each other in parallel. Its implementation details will be analyzed in
+Chapter 10 (see thesis). Conceptually, an implicit directed acyclic graph is created at compile-time
+thanks to the knowledge of system dependencies. The execution of the implicit DAG is handled by a
+system scheduler type specified during settings definition.
+
+2. "Inner parallelism"
+Other that running separate systems in parallel, ECST supports splitting a single system into
+multiple sub-tasks, which can be executed on separate threads. Many systems, such as the ones that
+represent functionally pure com- putations, do not contain side-effects that modify their own state
+or that define interactions between the subscribed entities: these are prime examples of “em-
+barrassingly parallel” computations. In contrast, some systems (e.g. broad-phase collision spatial
+partitioning) require processing their subscribed entities on a single thread, in order to update
+data structures without explicit locking mechanisms.
+
 ---------------------------------------------------------------------------------------------------
 # FAQ #
 
@@ -42,8 +58,6 @@ their storage policies.
 **A:** This has come up before in the past, and no. More information can be found in the [original
 issue.](https://github.com/SuperV1234/ecst/issues/8)
 
-
-
 **Q:** I'm trying to **read/write to/from** my component, but I'm getting a compilation error. What
 is happening?
 
@@ -51,6 +65,12 @@ is happening?
 too. You do this when your defining your "system signature list".
 [more info](https://github.com/SuperV1234/ecst/issues/4)
 
+**Q:** Is it possible to iterate over the components attached to entities, without being inside of
+a system's process function?
+
+**A:** [pending query](https://github.com/SuperV1234/ecst/issues/9#issuecomment-244577591)
+
+**Q** How do I set my system to run in parallel, splitting the wo
 ---------------------------------------------------------------------------------------------------
 # More Links
 * [Current Issues](https://github.com/SuperV1234/ecst/issues)
