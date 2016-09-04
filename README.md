@@ -7,7 +7,7 @@ Entity-Component-System Library
 
 [Accompanying Thesis](https://github.com/SuperV1234/bcs_thesis)
 
-[Slides][SuperV1234/cppnow2016](https://github.com/SuperV1234/cppnow2016).
+[Slides](https://github.com/SuperV1234/cppnow2016).
 
 *Accompanying an earlier version of the library was presented at **C++Now 2016**
 
