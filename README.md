@@ -35,14 +35,15 @@ their storage policies.
 2016**pdf
 
 ## Terminology
-* Entities: defined by Adam Martin in [10] as “fundamental conceptual building blocks” of a system,
-which represent concrete application ob-jects. They have no application-specific data or logic.
+* Entities: defined by Adam Martin (see thesis) as “fundamental conceptual building blocks” of a
+system, which represent concrete application ob-jects. They have no application-specific data or
+logic.
 
 * Components: small, reusable, types that compose entities. Again, cit-ing Adam Martin in (see-
 thesis), a component type “labels an entity as possess-ing a particular aspect”. Components store
 data but do not contain any logic.
 
-* Systems 1 : providers of implementation logic for entities possessing a specific set of component
+* Systems: providers of implementation logic for entities possessing a specific set of component
 types.
 
 * “Outer parallelism” is the term used in ECST which defines the concept of running multiple
