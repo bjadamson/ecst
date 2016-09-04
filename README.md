@@ -35,14 +35,12 @@ their storage policies.
 2016**pdf
 
 ---------------------------------------------------------------------------------------------------
-# Demonstration of using ECST
+# FAQ #
+* Can we have components that aren't default constructible?
+A: This has come up before in the past, and no. More information can be found in the original
+issue: https://github.com/SuperV1234/ecst/issues/8
+
 ---------------------------------------------------------------------------------------------------
-# ecst FAQ #
-
-## Logging in and Storing Credentials ##
-
-### How do I store credentials? ###
-
-If you want to save a user's login details for next time, do not store their password directly. Instead, implement the `SPSessionDelegate` method: 
-
-For example:
+# More Links
+* [Current Issues](https://github.com/SuperV1234/ecst/issues)
+* [Resolved Issues](https://github.com/SuperV1234/ecst/issues?q=is%3Aissue+is%3Aclosed)
