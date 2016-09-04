@@ -35,13 +35,23 @@ their storage policies.
 2016**pdf
 
 ## Terminology
-1. “Outer parallelism” is the term used in ECST which defines the concept of running multiple
+* Entities: defined by Adam Martin in [10] as “fundamental conceptual building blocks” of a system,
+which represent concrete application ob-jects. They have no application-specific data or logic.
+
+* Components: small, reusable, types that compose entities. Again, cit-ing Adam Martin in (see-
+thesis), a component type “labels an entity as possess-ing a particular aspect”. Components store
+data but do not contain any logic.
+
+* Systems 1 : providers of implementation logic for entities possessing a specific set of component
+types.
+
+* “Outer parallelism” is the term used in ECST which defines the concept of running multiple
 systems that do not depend on each other in parallel. Its implementation details will be analyzed in
 Chapter 10 (see thesis). Conceptually, an implicit directed acyclic graph is created at compile-time
 thanks to the knowledge of system dependencies. The execution of the implicit DAG is handled by a
 system scheduler type specified during settings definition.
 
-2. "Inner parallelism"
+* "Inner parallelism"
 Other that running separate systems in parallel, ECST supports splitting a single system into
 multiple sub-tasks, which can be executed on separate threads. Many systems, such as the ones that
 represent functionally pure com- putations, do not contain side-effects that modify their own state
