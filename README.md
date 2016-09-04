@@ -11,5 +11,4 @@ Entity-Component-System Library
 * [Slides](https://github.com/SuperV1234/cppnow2016)
  * NOTE: These are accompanying an earlier version of the library was that presented at **C++Now
 2016**
-
-[LICENSE](LICENSE)
+* [LICENSE](LICENSE)
