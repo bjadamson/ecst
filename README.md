@@ -86,8 +86,8 @@ a system's process function?
 
 **A:** During construction of the system signature list, invoke the
 [allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118)
-and
-[disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
+or
+[singlethreaded()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L128)
 
 **Q:** What is the difference between making my system single-threaded vs disabling inner
 paralellism?
