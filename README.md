@@ -42,6 +42,8 @@ their storage policies.
 **A:** This has come up before in the past, and no. More information can be found in the [original
 issue.](https://github.com/SuperV1234/ecst/issues/8)
 
+***
+
 **Q:** I'm trying to **read/write to/from** my component, but I'm getting a compilation error. What
 is happening?
 
