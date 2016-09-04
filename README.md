@@ -71,10 +71,9 @@ a system's process function?
 **Q** How do enable inner parallelism for my system?
 
 **A:** During construction of the system signature list, invoke the
-
  [allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118)
-
  [disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
+
 ---------------------------------------------------------------------------------------------------
 # More Links
 * [Current Issues](https://github.com/SuperV1234/ecst/issues)
