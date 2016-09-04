@@ -39,7 +39,7 @@ their storage policies.
 system, which represent concrete application ob-jects. They have no application-specific data or
 logic.
 
-* **Components:** small, reusable, types that compose entities. Again, cit-ing Adam Martin in (see-
+* **Components:** small, reusable, types that compose entities. Again, cit-ing Adam Martin in (see
 thesis), a component type “labels an entity as possess-ing a particular aspect”. Components store
 data but do not contain any logic.
 
