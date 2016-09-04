@@ -40,7 +40,13 @@ their storage policies.
 **Q:** Can we have components that aren't default constructible?
 
 **A:** This has come up before in the past, and no. More information can be found in the [original
-issue:](https://github.com/SuperV1234/ecst/issues/8)
+issue.](https://github.com/SuperV1234/ecst/issues/8)
+
+**Q:** I'm trying to **read/write to/from** my component, but I'm getting a compilation error. What
+is happening?
+
+**A:** Systems need to indicate (statically) which components that system will read from / write
+too. You do this when your defining your "system signature list".
 
 ---------------------------------------------------------------------------------------------------
 # More Links
