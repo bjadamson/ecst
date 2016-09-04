@@ -50,6 +50,9 @@ barrassingly parallel” computations.
 
 ---------------------------------------------------------------------------------------------------
 # FAQ #
+**Q** Where can I find documentation for the API?
+
+**A:** [issue](https://github.com/SuperV1234/ecst/issues/10)
 
 **Q:** Can we have components that aren't default constructible?
 
@@ -70,7 +73,8 @@ a system's process function?
 
 **Q** How do enable inner parallelism for my system?
 
-**A:** During construction of the system signature list, invoke the [allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118) and [disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
+**A:** During construction of the system signature list, invoke the
+[allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118) and [disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
 
 ---------------------------------------------------------------------------------------------------
 # More Links
