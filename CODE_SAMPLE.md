@@ -1,5 +1,3 @@
-## Code sample
-
 ```cpp
 #include <ecst.hpp>
 
