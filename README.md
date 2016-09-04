@@ -10,13 +10,13 @@ optimization possibilities.
 
 The Entity-Component-System architectural pattern was designed to achieve the aforementioned
 benefits, by separating data from logic.
-• Entities 1 can be composed of small, reusable, and generic components;
-• Components can be stored in contiguous memory areas, thus improving data locality and cache-
+* Entities 1 can be composed of small, reusable, and generic components;
+* Components can be stored in contiguous memory areas, thus improving data locality and cache-
 friendliness;
-• Application logic can be easily parallelized and abstracted away from the objects themselves and
+* Application logic can be easily parallelized and abstracted away from the objects themselves and
 their storage policies;
-• The state of the application can be serialized and shared over the network with less effort;
-• A more modular, generic and easily-testable codebase.
+* The state of the application can be serialized and shared over the network with less effort;
+* A more modular, generic and easily-testable codebase.
 
 **"ecst"** was developed as my BCS graduation project.
 
