@@ -82,13 +82,17 @@ a system's process function?
 
 **A:** [issue](https://github.com/SuperV1234/ecst/issues/9#issuecomment-244577591)
 
-**Q** How do enable inner parallelism for my system?
+**Q:** How do control whether my system runs in parallel, or as a single thread?
 
 **A:** During construction of the system signature list, invoke the
 [allow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L118)
 and
 [disallow_inner_parallelism()](https://github.com/SuperV1234/ecst/blob/7f0f84a0e496d0a83ce07a41260f08528bbf79ac/include/ecst/settings/data.hpp#L123)
 
+**Q:** What is the difference between making my system single-threaded vs disabling inner
+paralellism?
+
+**A:** todo
 ---------------------------------------------------------------------------------------------------
 # More Links
 * [Current Issues](https://github.com/SuperV1234/ecst/issues)
