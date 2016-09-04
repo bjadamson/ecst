@@ -5,9 +5,9 @@ Entity-Component-System Library
 
 **"ecst"** was developed as my BCS graduation project.
 
-[Accompanying Thesis](https://github.com/SuperV1234/bcs_thesis)
+* [Accompanying Thesis](https://github.com/SuperV1234/bcs_thesis)
 
-[Slides](https://github.com/SuperV1234/cppnow2016)
+* [Slides](https://github.com/SuperV1234/cppnow2016)
 
 * Accompanying an earlier version of the library was presented at **C++Now 2016**
 
