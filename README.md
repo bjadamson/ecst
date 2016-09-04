@@ -36,8 +36,8 @@ their storage policies.
 
 ---------------------------------------------------------------------------------------------------
 # FAQ #
-* Can we have components that aren't default constructible?
-A: This has come up before in the past, and no. More information can be found in the original
+**Q:** Can we have components that aren't default constructible?
+**A:** This has come up before in the past, and no. More information can be found in the original
 issue: https://github.com/SuperV1234/ecst/issues/8
 
 ---------------------------------------------------------------------------------------------------
