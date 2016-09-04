@@ -11,6 +11,8 @@ optimization possibilities.
 The Entity-Component-System architectural pattern was designed to achieve the aforementioned
 benefits, by separating data from logic.
 
+### Features
+* Header-Only !!
 * Entities can be composed of small, reusable, and generic components.
 * Components can be stored in contiguous memory areas, thus improving data locality and cache-
 friendliness.
