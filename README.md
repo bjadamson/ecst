@@ -12,4 +12,4 @@ Entity-Component-System Library
  * NOTE: These are accompanying an earlier version of the library was that presented at **C++Now
 2016**
 
-[LICENSE](LICENSE.md)
+[LICENSE](LICENSE)
