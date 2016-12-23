@@ -15,6 +15,7 @@
 #include <ecst/context/scheduler.hpp>
 #include <ecst/context/system.hpp>
 #include <ecst/context/storage.hpp>
+#include <tuple>
 
 ECST_CONTEXT_NAMESPACE
 {
@@ -85,6 +86,13 @@ ECST_CONTEXT_NAMESPACE
             template <typename TContext, typename... TStartSystemTags>
             auto execute_systems_from(
                 TContext& context, TStartSystemTags... sts) noexcept;
+
+            /// @brief Returns a variadic lambda accepting system execution
+            /// functions that will be executed on all dependency chains
+            /// starting from `sts...`.
+            template <typename TContext, typename TStartSystemTags>
+            auto execute_systems_from(
+                TContext& context, std::tuple<TStartSystemTags> &&) noexcept;
 
             /// @brief Returns a variadic lambda accepting system execution
             /// functions that will be executed on all dependency chains

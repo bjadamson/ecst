@@ -22,6 +22,15 @@ ECST_CONTEXT_NAMESPACE
             }
 
             template <typename TSettings>
+            template <typename TStartSystemTags>
+            auto proxy<TSettings>::execute_systems_from(
+                std::tuple<TStartSystemTags> &&sts) noexcept
+            {
+                return this->context().execute_systems_from(
+                    this->context(), std::forward<TStartSystemTags>(sts));
+            }
+
+            template <typename TSettings>
             template <typename... TStartSystemTags>
             auto proxy<TSettings>::execute_systems_from(
                 TStartSystemTags... sts) noexcept

@@ -86,6 +86,17 @@ ECST_CONTEXT_NAMESPACE
         }
 
         template <typename TSettings>
+        template <typename TContext, typename TStartSystemTags>
+        auto system_manager<TSettings>::execute_systems_from(
+                TContext& context, std::tuple<TStartSystemTags> &&sstl) noexcept
+        {
+            return [this, &context, sstl](auto&&... fns)
+            {
+                this->execute_systems_impl(context, sstl);
+            };
+        }
+
+        template <typename TSettings>
         template <typename TContext, typename... TStartSystemTags>
         auto system_manager<TSettings>::execute_systems_from(
             TContext& context, TStartSystemTags... sts) noexcept
@@ -95,6 +106,7 @@ ECST_CONTEXT_NAMESPACE
             {
                 this->execute_systems_impl(context, sstl, FWD(fns)...);
             };
+            //return this->execute_systems_from(context, std::make_tuple(sts...));
         }
 
         template <typename TSettings>

@@ -5,6 +5,7 @@
 
 #pragma once
 
+#include <tuple>
 #include <ecst/config.hpp>
 #include <ecst/aliases.hpp>
 #include "../defer.hpp"
@@ -32,6 +33,9 @@ ECST_CONTEXT_NAMESPACE
 
                 template <typename... TStartSystemTags>
                 auto execute_systems_from(TStartSystemTags... sts) noexcept;
+
+                template <typename TStartSystemTags>
+                auto execute_systems_from(std::tuple<TStartSystemTags> &&) noexcept;
 
                 auto execute_systems() noexcept;
             };
